@@ -536,55 +536,59 @@
   <section class="slide" data-slide="5">
     <div class="tag">Live Demo</div>
     <h2>Five screens, <em>one workflow</em></h2>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;width:100%;max-width:1100px;margin-top:28px;">
+    <!-- Top row: recruiter setup (3 cols) -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;width:100%;max-width:1100px;margin-top:22px;">
 
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-bottom:2px;">01 · Home</div>
-        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
-          <img src="../screenshots/home.png" style="width:100%;display:block;" alt="Home screen"/>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">01 · Organization</div>
+        <div style="border-radius:8px;overflow:hidden;border:1px solid var(--border);flex:1;">
+          <img src="../screenshots/org.png" style="width:100%;display:block;" alt="Organization"/>
         </div>
-        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Landing page — explains the workflow and links to the console.</p>
+        <p style="font-size:11px;color:var(--text-2);line-height:1.45;">Write knowledge base + rules. Generate the Dialogue Map.</p>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-bottom:2px;">02 · Organization</div>
-        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
-          <img src="../screenshots/org.png" style="width:100%;display:block;" alt="Organization screen"/>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">02 · Dialogue Map</div>
+        <div style="border-radius:8px;overflow:hidden;border:1px solid var(--border);flex:1;">
+          <img src="../screenshots/flow_map.png" style="width:100%;display:block;" alt="Flow map"/>
         </div>
-        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Write the knowledge base and interview rules. Generate a Dialogue Map.</p>
+        <p style="font-size:11px;color:var(--text-2);line-height:1.45;">Visual branching editor — every question, condition, gesture.</p>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-2);margin-bottom:2px;">03 · Dialogue Map</div>
-        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
-          <img src="../screenshots/flow.png" style="width:100%;display:block;" alt="Flow editor"/>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);">03 · Avatar &amp; Motion</div>
+        <div style="border-radius:8px;overflow:hidden;border:1px solid var(--border);flex:1;">
+          <img src="../screenshots/motions.png" style="width:100%;display:block;" alt="Motions"/>
         </div>
-        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Visual branching editor — every question, branch condition and gesture slot.</p>
+        <p style="font-size:11px;color:var(--text-2);line-height:1.45;">Pick face, scene, voice. Set 8 gesture slots with live preview.</p>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-2);margin-bottom:2px;">04 · Avatar &amp; Motion</div>
-        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
-          <img src="../screenshots/motions.png" style="width:100%;display:block;" alt="Motions screen"/>
+    </div>
+
+    <!-- Divider label -->
+    <div style="display:flex;align-items:center;gap:12px;width:100%;max-width:1100px;margin:12px 0 6px;">
+      <div style="flex:1;height:1px;background:var(--border);"></div>
+      <span style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-2);">Candidate experience → Recruiter reads the evidence</span>
+      <div style="flex:1;height:1px;background:var(--border);"></div>
+    </div>
+
+    <!-- Bottom row: candidate + report (2 cols) -->
+    <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:10px;width:100%;max-width:1100px;">
+
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent-2);">04 · Candidate Interview</div>
+        <div style="border-radius:8px;overflow:hidden;border:1px solid rgba(77,214,193,0.3);">
+          <img src="../screenshots/interview_start.png" style="width:100%;display:block;" alt="Interview"/>
         </div>
-        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Pick avatar, scene, voice. Set 8 gesture slots with live preview.</p>
+        <p style="font-size:11px;color:var(--text-2);line-height:1.45;">One URL, no login. Avatar speaks, listens, reacts. 2 minutes.</p>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-2);margin-bottom:2px;">05 · Candidates</div>
-        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
-          <img src="../screenshots/reviews.png" style="width:100%;display:block;" alt="Reviews screen"/>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent-2);">05 · Scored Report</div>
+        <div style="border-radius:8px;overflow:hidden;border:1px solid rgba(77,214,193,0.3);">
+          <img src="../screenshots/report_detail.png" style="width:100%;display:block;" alt="Report"/>
         </div>
-        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Scored reports with verbatim quotes, score breakdown, and full transcript.</p>
-      </div>
-
-      <div style="display:flex;flex-direction:column;gap:8px;justify-content:center;">
-        <div class="grad-card" style="padding:20px 22px;">
-          <p style="font-size:13px;color:var(--text-2);line-height:1.65;margin-bottom:12px;">
-            Candidates get <strong style="color:var(--accent)">/i/&lt;flowId&gt;</strong> — one URL, no login. The avatar runs the screen, routes adaptively, and scores automatically.
-          </p>
-          <span class="pill purple" style="margin-top:0">Share one link</span>
-        </div>
+        <p style="font-size:11px;color:var(--text-2);line-height:1.45;">88/100 · ADVANCE — dimension scores with verbatim evidence behind every judgement.</p>
       </div>
 
     </div>

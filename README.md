@@ -12,17 +12,27 @@ Built on the [Perxona Connect Kit](https://github.com/XRSPACE-Inc/perxona-connec
 
 ## Screenshots
 
-| Home | Organization |
-|------|-------------|
+**Recruiter console — set up once, reuse for every candidate:**
+
+| Home | Organization — knowledge base & rules |
+|------|---------------------------------------|
 | ![Home](docs/screenshots/home.png) | ![Organization](docs/screenshots/org.png) |
 
-| Dialogue Map Editor | Avatar & Motion |
-|--------------------|----------------|
-| ![Flow editor](docs/screenshots/flow.png) | ![Motions](docs/screenshots/motions.png) |
+| Dialogue Map — visual branching editor | Avatar & Motion — pick face, scene, gestures |
+|----------------------------------------|-----------------------------------------------|
+| ![Flow map](docs/screenshots/flow_map.png) | ![Motions](docs/screenshots/motions.png) |
 
-| Candidate Reports |
-|-------------------|
-| ![Reviews](docs/screenshots/reviews.png) |
+**Candidate experience — share one link, no login:**
+
+| Interview — candidate view (Begin screen) |
+|-------------------------------------------|
+| ![Interview start](docs/screenshots/interview_start.png) |
+
+**After the interview — scored report with verbatim quotes:**
+
+| Candidate report — score, dimension breakdown, quotes |
+|-------------------------------------------------------|
+| ![Report detail](docs/screenshots/report_detail.png) |
 
 ---
 
