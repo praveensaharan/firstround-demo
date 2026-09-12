@@ -1,0 +1,18 @@
+{
+  "name": "firstround",
+  "version": "1.0.0",
+  "description": "FirstRound — AI avatar first-round screening. Organizations define knowledge, rules and a branching Dialogue Map; a Perxona avatar runs the interview and scores it.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file=.env --watch server.mjs",
+    "start": "node --env-file=.env server.mjs",
+    "seed": "node --env-file=.env scripts/seed.mjs"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

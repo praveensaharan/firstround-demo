@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dialogue Map — FirstRound</title>
+    <link rel="stylesheet" href="/css/app.css" />
+    <style>
+      .editor {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 384px;
+        gap: 16px;
+        align-items: start;
+      }
+      @media (max-width: 1180px) {
+        .editor { grid-template-columns: 1fr; }
+        .inspector { position: static; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell" id="shell">
+      <main class="main" id="main"></main>
+    </div>
+    <script type="module" src="/js/flow.js"></script>
+  </body>
+</html>
