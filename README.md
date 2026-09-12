@@ -10,6 +10,22 @@ Built on the [Perxona Connect Kit](https://github.com/XRSPACE-Inc/perxona-connec
 
 ---
 
+## Screenshots
+
+| Home | Organization |
+|------|-------------|
+| ![Home](docs/screenshots/home.png) | ![Organization](docs/screenshots/org.png) |
+
+| Dialogue Map Editor | Avatar & Motion |
+|--------------------|----------------|
+| ![Flow editor](docs/screenshots/flow.png) | ![Motions](docs/screenshots/motions.png) |
+
+| Candidate Reports |
+|-------------------|
+| ![Reviews](docs/screenshots/reviews.png) |
+
+---
+
 ## How to run
 
 ```bash

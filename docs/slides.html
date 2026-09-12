@@ -532,47 +532,62 @@
     </div>
   </section>
 
-  <!-- ── SLIDE 6: Demo ── -->
+  <!-- ── SLIDE 6: Demo (real screenshots) ── -->
   <section class="slide" data-slide="5">
     <div class="tag">Live Demo</div>
     <h2>Five screens, <em>one workflow</em></h2>
-    <div class="demo-grid">
-      <div class="demo-screen">
-        <div class="bar">Organization Console — /org/</div>
-        <div class="body">
-          <h4>1 · Knowledge Base + Generate</h4>
-          <p>Write what your company does and your interview rules. Pick a role preset, click Generate. DeepSeek returns a branching Dialogue Map in ~9s.</p>
-          <span class="pill purple">DeepSeek generates the map</span>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;width:100%;max-width:1100px;margin-top:28px;">
+
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-bottom:2px;">01 · Home</div>
+        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+          <img src="../screenshots/home.png" style="width:100%;display:block;" alt="Home screen"/>
+        </div>
+        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Landing page — explains the workflow and links to the console.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-bottom:2px;">02 · Organization</div>
+        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+          <img src="../screenshots/org.png" style="width:100%;display:block;" alt="Organization screen"/>
+        </div>
+        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Write the knowledge base and interview rules. Generate a Dialogue Map.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-2);margin-bottom:2px;">03 · Dialogue Map</div>
+        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+          <img src="../screenshots/flow.png" style="width:100%;display:block;" alt="Flow editor"/>
+        </div>
+        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Visual branching editor — every question, branch condition and gesture slot.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent-2);margin-bottom:2px;">04 · Avatar &amp; Motion</div>
+        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+          <img src="../screenshots/motions.png" style="width:100%;display:block;" alt="Motions screen"/>
+        </div>
+        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Pick avatar, scene, voice. Set 8 gesture slots with live preview.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-2);margin-bottom:2px;">05 · Candidates</div>
+        <div style="border-radius:10px;overflow:hidden;border:1px solid var(--border);">
+          <img src="../screenshots/reviews.png" style="width:100%;display:block;" alt="Reviews screen"/>
+        </div>
+        <p style="font-size:12px;color:var(--text-2);line-height:1.5;">Scored reports with verbatim quotes, score breakdown, and full transcript.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:8px;justify-content:center;">
+        <div class="grad-card" style="padding:20px 22px;">
+          <p style="font-size:13px;color:var(--text-2);line-height:1.65;margin-bottom:12px;">
+            Candidates get <strong style="color:var(--accent)">/i/&lt;flowId&gt;</strong> — one URL, no login. The avatar runs the screen, routes adaptively, and scores automatically.
+          </p>
+          <span class="pill purple" style="margin-top:0">Share one link</span>
         </div>
       </div>
-      <div class="demo-screen">
-        <div class="bar">Flow Editor — /org/flow.html</div>
-        <div class="body">
-          <h4>2 · Visual Dialogue Map Editor</h4>
-          <p>Every question, branch condition, gesture slot, emotion and fallback — editable in the browser. Drag to rearrange.</p>
-          <span class="pill teal">Editable without touching JSON</span>
-        </div>
-      </div>
-      <div class="demo-screen">
-        <div class="bar">Motion Editor — /org/motions.html</div>
-        <div class="body">
-          <h4>3 · Avatar, Scene &amp; Gestures</h4>
-          <p>Pick avatar, scene and voice. Map 8 named gesture slots using presets (Warm / Balanced / Rigorous) or manually. Preview live.</p>
-          <span class="pill purple">Live Perxona avatar preview</span>
-        </div>
-      </div>
-      <div class="demo-screen">
-        <div class="bar">Candidate Link — /i/&lt;flowId&gt;</div>
-        <div class="body">
-          <h4>4 · Candidate Interview</h4>
-          <p>No login. The avatar speaks, listens, reacts. Branch routing runs between every answer. The avatar's response arrives in 1–1.5s.</p>
-          <span class="pill teal">Share one URL — done</span>
-        </div>
-      </div>
+
     </div>
-    <p style="margin-top:20px;font-size:13px;color:var(--text-2);">
-      After the interview: <strong style="color:var(--text)">Reviews → /org/reviews.html</strong> — scored report, dimension breakdown, verbatim quotes, full transcript.
-    </p>
   </section>
 
 </div><!-- /deck -->
