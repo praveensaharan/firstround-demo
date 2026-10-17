@@ -1,0 +1,28 @@
+# RoleSpace's Suggest agent opens PRs from rolespace/* branches. Those PRs may only touch
+# the designer allow-list from RoleSpace's role.yaml. Human PRs are not checked here.
+name: designer-allowlist
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  designer-allowlist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bot PRs may only change public/css/** and public/**/*.html
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          case "$HEAD_REF" in rolespace/*) ;; *) echo "Not a RoleSpace bot PR: no allow-list."; exit 0 ;; esac
+          bad=0
+          while read -r f; do
+            case "$f" in
+              public/css/*|public/*.html) echo "allowed  $f" ;;
+              *) echo "::error file=$f::$f is outside the designer allow-list"; bad=1 ;;
+            esac
+          done < <(gh pr diff "$PR" --repo "$GITHUB_REPOSITORY" --name-only)
+          exit $bad
