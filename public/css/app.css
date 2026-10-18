@@ -268,6 +268,10 @@ a:hover { text-decoration: underline; }
 }
 .btn-primary:hover:not(:disabled) { filter: brightness(1.09); }
 
+.gate .btn-primary {
+  background: #FF6B35;
+}
+
 .btn-ghost {
   background: var(--surface-2);
   border-color: var(--border);
